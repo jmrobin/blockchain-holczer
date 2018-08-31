@@ -9,10 +9,16 @@ public class Application
 		Miner miner = new Miner();
 
 		Block block0 = new Block(0, "no transaction", "");
+<<<<<<< HEAD
 		block0.setHash(Constants.GENESIS_PREV_HASH);
 		blockchain.addBlock(block0);
 
 		Block block1 = new Block(1, "transaction 1", block0.getHash());
+=======
+		blockchain.addBlock(block0);
+
+		Block block1 = new Block(1, "transaction 1", Constants.GENESIS_PREV_HASH);
+>>>>>>> 75513a68bc81a84e5e55883afdacf67fbaff880f
 		miner.mine(block1, blockchain);
 
 		Block block2 = new Block(2, "transaction 2", block1.getHash());
