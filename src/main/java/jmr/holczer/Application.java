@@ -13,7 +13,7 @@ public class Application
 		blockchain.addBlock(block0);
 
 		Block block1 = new Block(1, "transaction 1", block0.getHash());
-		blockchain.addBlock(block0);
+		miner.mine(block1, blockchain);
 
 		Block block2 = new Block(2, "transaction 2", block1.getHash());
 		miner.mine(block2, blockchain);
