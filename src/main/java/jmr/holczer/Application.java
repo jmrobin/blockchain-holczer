@@ -5,7 +5,9 @@ public class Application
 
 	public static void main( String[] args )
 	{
-		// TODO Auto-generated method stub
+		String data = "I love you";
+		String result = SHA256Helper.generateHash(data);
+		System.out.println(result);
 
 	}
 
